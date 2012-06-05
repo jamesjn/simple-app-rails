@@ -1,0 +1,12 @@
+Create a new group:
+<div>
+<%= form_for @group do |f|%>
+  <div>
+    Name: <%= f.text_field :name %> 
+  </div>
+  <div>
+    Info: <%= f.text_area :info %> 
+  </div>
+  <%= f.submit %>
+<% end %>
+</div>

@@ -1,0 +1,15 @@
+Editing Group
+
+<%= form_for(@group) do |f|%>
+  <div>
+    Name: <%= f.text_field :name %> 
+  </div>
+  <div>
+    Info: <%= f.text_area :info %> 
+  </div>
+  <%= f.submit %>
+<% end %>
+
+<div>
+  <%= link_to "index", groups_path %>
+</div>
